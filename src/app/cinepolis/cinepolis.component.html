@@ -1,0 +1,125 @@
+
+
+<body>
+    <br>
+    <div class="container" align="center">
+        <img src="https://cdn2.mediotiempo.com/uploads/media/2020/03/24/cinepolis-cerrara-sus-puertas-hasta.jpg" width="250px">
+    </div>
+
+    <br>
+    
+    <div class="container">
+        <div class="row">
+            <!--Entradas-->
+            <div class="col-lg-5 card" name="Entradas">
+                <h3>Entradas</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label class="form-control">Nombre</label>
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" placeholder="Ingresa tu nombre" [(ngModel)]="nombre">
+                        </div>
+                    </div>
+                </div>
+                <br>
+    
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label class="form-control">Cantidad de compradores</label>
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" placeholder="cantidad" [(ngModel)]="cantCompradores">
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label class="form-control">Targeta Cineco</label>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="radio" id="" name="Cinepo" value="1" class="" [(ngModel)]="cineco">
+                                        <label for="">Sí</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="radio" id="" name="Cinepo" value="0" class="" [(ngModel)]="cineco">
+                                        <label for="">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <br>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label class="form-control">Cantidad de boletos</label>
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" placeholder="Cantidad" [(ngModel)]="cantVoletos">
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="col-lg-2"></div>
+            <!--Salidas-->
+            <div class="col-lg-5 card" name="salidas">
+                
+                <br>
+                <br>
+                <h3>Salidas</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label class="form-control">Valor a pagar</label>
+                        </div>
+                        <div class="col-lg-6">
+                            <label  class="form-control"> {{resultado}} </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label class="form-control">Nombre del cliente y N° de voletos</label>
+                        </div>
+                        <div class="col-lg-6">
+                            <label  class="form-control"> {{datos}} </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    
+    <!--Acciones-->
+    <div class="container text-center card">
+        <h3>Acciones</h3>
+        <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <button (click)="procesar()" class="btn btn-primary">Procesar</button>
+            </div>
+            <div class="col-lg-6">
+                <button  class="btn btn-primary">Salir</button>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>
+    
+</body>
